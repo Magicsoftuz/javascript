@@ -1,28 +1,36 @@
-let myAge = 25; // Number type (number turini odatda qo'shtirnoqsiz yozamiz)
-console.log(myAge);
+// Let va Const kalit so'zlari ES2015 (ES6) dan boshlab ishlatilishi boshlandi.
+// Oldin faqat var kalit so'zi mavjud bo'lgan variable larni elon qilish uchun
 
-let myName = "Umid"; // String type (String turini har doim qo'shtirnoq ichida yozamiz)
-console.log(myName);
+// ---------------------------------------------------------
 
-let areYouStudent = true; // Boolean type (Boolean type ikki xil buladi true yoki false bu ham qo'shtirnoqsiz yoziladi)
-console.log(areYouStudent);
+// "let" kaliti suzi bilan elon qilingan variable lar - mutate variablelar deyiladi va bularni qiymatini uzgartirish mumkin
+// Bu mutable variable deyiladi.
+let age = 30;
+console.log(age);
 
-let ertangiObHavo; // Undefined va Null type (Bu typeda variable ni elon qilamiz lekin value mavjud bulmaydi)
-console.log(ertangiObHavo);
+age = 32;
+console.log(age); // bu yerda bitta age variable ni let bilan elon qildim va keyinro shu valueni qiymatini yana uzgartirdim
 
-let kattaRaqam = 9007199254740991n; // bu yerda BigInt type ishlaydi, chunki judayam katta son kiritildi.
-console.log(kattaRaqam);
+// const kaliti suzi bilan elon qilindan variable lar - immutate variable deyiladi va bularni qiymatini uzgartirib bulmaydi.
+// Bu immutable variable deyiladi.
 
-console.log("---------------------------------");
-// typeof funksiyasi biz qaysi typeda malumot kiritganimizni kursatib turadi.
-console.log(typeof myAge);
-console.log(typeof myName);
-console.log(typeof areYouStudent);
-console.log(typeof ertangiObHavo);
-console.log(typeof kattaRaqam);
+// ---------------------------------------------------------
 
-console.log("---------------------------------");
+const birthYear = 1996;
+console.log(birthYear);
 
-ertangiObHavo = "issiq";
-console.log(ertangiObHavo);
-console.log(typeof ertangiObHavo);
+// birthYear = 1997;  - Mumkin emas chunki qiymatni uzgartirib bulmaydi "const" da.
+
+// const job;  - Bu yerda boshlangich qiymatni har doim berishimiz kerak "const" da.
+let job; // Bunday qilishimiz mukin. chunki keyinchalik qiymatni uzgartirishimiz mumkin.
+
+// ---------------------------------------------------------
+
+// Var xuddi let ga uxshab ketadi yani keyinchalik qiymatni uzgartirsak buladi. Bitta farqi "let" - "Block scope", "var" - "function scope"
+// Bu nima ekanligini keyingi darslarda urganamiz.
+
+var year = 2021;
+console.log(year);
+
+year = 2022;
+console.log(year);
