@@ -1,44 +1,28 @@
-console.log("Umid"); // Umid - this is here Value
-console.log(40 + 5 + 3 + 3); //40,5,3,3 - Value
+let myAge = 25; // Number type (number turini odatda qo'shtirnoqsiz yozamiz)
+console.log(myAge);
 
-let firstName = "Umid"; // firstName - variables    umid - value
+let myName = "Umid"; // String type (String turini har doim qo'shtirnoq ichida yozamiz)
+console.log(myName);
 
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+let areYouStudent = true; // Boolean type (Boolean type ikki xil buladi true yoki false bu ham qo'shtirnoqsiz yoziladi)
+console.log(areYouStudent);
 
-// Har doim Variable ni yozayotganimizda camelCase dan foydalanamiz.
+let ertangiObHavo; // Undefined va Null type (Bu typeda variable ni elon qilamiz lekin value mavjud bulmaydi)
+console.log(ertangiObHavo);
 
-//birinchi so'zning birinchi harfi har doim kichik harf bilan boshlanadi.
-// agar ikkinchi so'z qo'shmoqchi bo'lsak ikkinchi so'zning birinchi harfi katta harf bilan boshlanadi
+let kattaRaqam = 9007199254740991n; // bu yerda BigInt type ishlaydi, chunki judayam katta son kiritildi.
+console.log(kattaRaqam);
 
-//name
-//last
+console.log("---------------------------------");
+// typeof funksiyasi biz qaysi typeda malumot kiritganimizni kursatib turadi.
+console.log(typeof myAge);
+console.log(typeof myName);
+console.log(typeof areYouStudent);
+console.log(typeof ertangiObHavo);
+console.log(typeof kattaRaqam);
 
-let lastName = "Rustamov";
+console.log("---------------------------------");
 
-console.log(lastName);
-
-// variable lar har doim quydagicha boshlasligi kerak.
-
-//1. raqamlar bilan
-
-// let 3years = 3; - mumkin emas
-
-// 2. & - belgisi ishlatilmaydi.
-
-// let umid&Rustamov = "Umid"; - mumkin emas
-
-// 3. JavaScriptning o'zining so'zlari ishlatilmaydi.
-
-// let function = "University"; - mumkin emas
-
-// Function, name, new, package,return,long, ....
-
-// Har doim variable larga nom bermoqchi bulsak, mano anglatadigan nom berish kerak.
-
-let myFirstUniversity = "TATU";
-let mySecondUniversity = "NUU"; // shunaqa yozish afzal kuriladi.
-
-// let university1 = "TATU";
-// let university2 = "NUU";  // Bunday yozish afzal kurilmaydi.
+ertangiObHavo = "issiq";
+console.log(ertangiObHavo);
+console.log(typeof ertangiObHavo);
