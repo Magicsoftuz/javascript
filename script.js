@@ -1,36 +1,81 @@
-// Let va Const kalit so'zlari ES2015 (ES6) dan boshlab ishlatilishi boshlandi.
-// Oldin faqat var kalit so'zi mavjud bo'lgan variable larni elon qilish uchun
+// Minus matematik operatori (-)
 
-// ---------------------------------------------------------
+let now = 2034;
 
-// "let" kaliti suzi bilan elon qilingan variable lar - mutate variablelar deyiladi va bularni qiymatini uzgartirish mumkin
-// Bu mutable variable deyiladi.
-let age = 30;
-console.log(age);
+const ageUmid = now - 1996;
+const ageLinda = now - 1999; // 2034 yilini ikki marta yozish urniga uni bitta variable ga olib quyamiz
 
-age = 32;
-console.log(age); // bu yerda bitta age variable ni let bilan elon qildim va keyinro shu valueni qiymatini yana uzgartirdim
+// console.log(ageUmid);
+// console.log(ageLinda);
 
-// const kaliti suzi bilan elon qilindan variable lar - immutate variable deyiladi va bularni qiymatini uzgartirib bulmaydi.
-// Bu immutable variable deyiladi.
+//------------------------------------------------------
 
-// ---------------------------------------------------------
+// ikki ta console.log() yozish urniga bittada ham yozishimiz mumkin. buning uchun varibalelarni (,) vergul bilan ajratamiz
+console.log(ageUmid, ageLinda);
 
-const birthYear = 1996;
-console.log(birthYear);
+//------------------------------------------------------
 
-// birthYear = 1997;  - Mumkin emas chunki qiymatni uzgartirib bulmaydi "const" da.
+// ko'paytirish matematik operatori (*)
 
-// const job;  - Bu yerda boshlangich qiymatni har doim berishimiz kerak "const" da.
-let job; // Bunday qilishimiz mukin. chunki keyinchalik qiymatni uzgartirishimiz mumkin.
+const kopaytma = ageUmid * ageLinda;
+console.log(kopaytma);
 
-// ---------------------------------------------------------
+//------------------------------------------------------
 
-// Var xuddi let ga uxshab ketadi yani keyinchalik qiymatni uzgartirsak buladi. Bitta farqi "let" - "Block scope", "var" - "function scope"
-// Bu nima ekanligini keyingi darslarda urganamiz.
+// Bo'lish matematik operatori (/)
 
-var year = 2021;
-console.log(year);
+const bulish = ageUmid / ageLinda;
+console.log(bulish);
 
-year = 2022;
-console.log(year);
+//------------------------------------------------------
+
+// Darajaga kutarish 3 ni to'rtinchi darajasi = 3 * 3 * 3 * 3
+
+console.log(3 ** 4); // ikkita kupatirish beligisi darajaga kutaradi
+
+//------------------------------------------------------
+
+// Ikkita variable ni bir biriga qo'shish uchun (+) belgisi ishlatdik , agar buni string ga qulasak ikkita stringni birlashtirib beradi.
+const firstName = "Umid";
+const lastName = "Rustamov";
+console.log(firstName + lastName);
+
+// Agar ikkita suz urtasiga joy tashlamoqchi bulsak
+console.log(firstName + " " + lastName);
+
+//------------------------------------------------------
+
+// Assignment operators, Tenglik operatori (=)
+
+let x = 10 + 15;
+console.log(x);
+
+//ikkita operatorni bitta joyda kelishi (+=)
+
+x += 80; // x = x + 80;
+console.log(x);
+
+//--------------------------
+
+x *= 5; // x = x * 5;
+console.log(x);
+
+//--------------------------
+
+x++; // x = x + 1;
+console.log(x);
+
+//--------------------------
+
+x--; // x = x - 1;
+console.log(x);
+
+//------------------------------------------------------
+
+// Comparison operators, taqqoslash operatorlari
+console.log(ageUmid > ageLinda); // true qaytaradi chunki taqqoslash operatori tugri
+
+console.log(ageUmid >= 50); // false qaytaradi chunki ageumid = 38 ga teng. 38 >= 50  bu xato shuning uchun false.
+
+const isFullAge = ageLinda >= 30;
+console.log(isFullAge);
