@@ -1,29 +1,32 @@
-const now = 2022;
-const ageUmid = now - 1996;
-const ageLinda = now - 1999;
+const firstName = "Umid";
+const lastName = "Rustamov";
+const job = "Developer";
+const birthYear = "1996";
+const umid =
+  "I am " +
+  firstName +
+  " " +
+  lastName +
+  "a " +
+  " " +
+  job +
+  " " +
+  "and I was born in " +
+  birthYear;
+console.log(umid); // Bu juda ham qiyin yul, shu uchun buning urniga literal template dan foydalanamiz
 
-// const bigAge = ageUmid > ageLinda;
+const linda = `I am ${firstName} ${lastName} a ${job} and I was born in ${birthYear}`;
+console.log(linda);
 
-// Bu yerda birinchi bulib minus (-) operatori ishlaydi keyin taqqoslash (>) operatori ishlaydi.
-const bigAge = now - 1996 > now - 1999;
+// Tepada yozilgan usul osonroq, chunki joy tashlash uchun alohida qushtirnoq ochib bush joy tashlamadik.
 
-let x, y;
-x = y = 25 - 14 - 5; // x = y = 6
+// Bu yerda asosiy qoida qushtirnoq urniga("") `` egilgan qushtirnoq ishlatishimiz kerak, va uzgaruvchilarni ${} shuniga ichiga yozishimiz kerak buladi.
 
-console.log(x, y);
+console.log(`Hello world!`); // Oddiy holatlarda ham bundan foydalanishingiz mumkin
 
-const averageAge = ageLinda + ageUmid / 2;
-console.log(averageAge);
+console.log("University is bug \n Exactly!"); // keyingi qatordan yozish uchun "\n" foydalanishimiz mukin
 
-/* 
-1. (a+b) - Guruhlash
-2. a++ , a-- oshib borish yoki kamayib borish
-3. ++a , --a oshib borish yoki kamayib borish
-4. typeof - turini kursatish
-5. a**b - darajaga kutarish
-6. a*b, a/b, a%b - kupaytirish, bulish, qoldiqli bulish
-7. a+b, a-b - ayrish, qushish
-8. <, <=, >, >= - katta, kichik tenglinglari (taqqoslashlar)
-*/
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+console.log(`Hello 
+world
+salom
+`); // Template literals da qanday yozsa shunday chiqadi yani pastdan yozish uchun  "\n" kerak emas.
