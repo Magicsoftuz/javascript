@@ -1,32 +1,21 @@
-const firstName = "Umid";
-const lastName = "Rustamov";
-const job = "Developer";
-const birthYear = "1996";
-const umid =
-  "I am " +
-  firstName +
-  " " +
-  lastName +
-  "a " +
-  " " +
-  job +
-  " " +
-  "and I was born in " +
-  birthYear;
-console.log(umid); // Bu juda ham qiyin yul, shu uchun buning urniga literal template dan foydalanamiz
+const age = 19;
 
-const linda = `I am ${firstName} ${lastName} a ${job} and I was born in ${birthYear}`;
-console.log(linda);
+// Prava olishga yoshi yetadi yoki yuq shuni hisoblovchi dastur
 
-// Tepada yozilgan usul osonroq, chunki joy tashlash uchun alohida qushtirnoq ochib bush joy tashlamadik.
+if (age >= 18) {
+  console.log("Umid can start driving license!");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`You are not allowed to drive, Wait another ${yearLeft} years`);
+}
 
-// Bu yerda asosiy qoida qushtirnoq urniga("") `` egilgan qushtirnoq ishlatishimiz kerak, va uzgaruvchilarni ${} shuniga ichiga yozishimiz kerak buladi.
+// Qaysi asrda tugilgani aniqlab beruvchi dastur
 
-console.log(`Hello world!`); // Oddiy holatlarda ham bundan foydalanishingiz mumkin
-
-console.log("University is bug \n Exactly!"); // keyingi qatordan yozish uchun "\n" foydalanishimiz mukin
-
-console.log(`Hello 
-world
-salom
-`); // Template literals da qanday yozsa shunday chiqadi yani pastdan yozish uchun  "\n" kerak emas.
+const birthYear = 1996;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(`Siz ${century} asrda tugilgansiz!`);
