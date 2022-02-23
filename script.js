@@ -1,21 +1,15 @@
-const age = 19;
+"use strict"; // Qoidalar asosida to'g'ri yozishga yordam beradi
 
-// Prava olishga yoshi yetadi yoki yuq shuni hisoblovchi dastur
+let talabamiSan = false;
+let testdanUtish = true;
 
-if (age >= 18) {
-  console.log("Umid can start driving license!");
-} else {
-  const yearLeft = 18 - age;
-  console.log(`You are not allowed to drive, Wait another ${yearLeft} years`);
+if (testdanUtish) {
+  talabamSan = true; // Bu yerda "talabamisan emas balki yangi uzgaruvchi paydo buldi: talabamsan. Chunki i ni qoldirib ketdim"
 }
-
-// Qaysi asrda tugilgani aniqlab beruvchi dastur
-
-const birthYear = 1996;
-let century;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
+if (talabamiSan) {
+  // bu ifni ichiga kirmaydi chunki talabamisan hali ham false turibdi. Biz talabamSan o'zgaruvchisiga true berib quyganmiz.
+  console.log("Men talabaman");
 }
-console.log(`Siz ${century} asrda tugilgansiz!`);
+// Agar "use strict" dan foydalansam shunaqa xato yozib ketgan o'zgaruvchilarimni aytib turadi.
+
+const interface = 22; // Bizga interface nomi orqali uzgaruvchi yaratib berdi. Lekin bunday nom orqali uzgaruvchi mumkin emas. Chunki javascriptning reserve suzi hisoblanadi. Shuning oldini olish uchun strict mode bizga bunday nomdan foydalanish mumkin emasliginin aytib turadi.
