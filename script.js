@@ -1,15 +1,20 @@
 "use strict"; // Qoidalar asosida to'g'ri yozishga yordam beradi
 
-let talabamiSan = false;
-let testdanUtish = true;
-
-if (testdanUtish) {
-  talabamSan = true; // Bu yerda "talabamisan emas balki yangi uzgaruvchi paydo buldi: talabamsan. Chunki i ni qoldirib ketdim"
+function ekrangaChiqar() {
+  console.log("Hello world!");
+  console.log("Salom Dunyo!");
+  console.log("hi Umid!");
 }
-if (talabamiSan) {
-  // bu ifni ichiga kirmaydi chunki talabamisan hali ham false turibdi. Biz talabamSan o'zgaruvchisiga true berib quyganmiz.
-  console.log("Men talabaman");
-}
-// Agar "use strict" dan foydalansam shunaqa xato yozib ketgan o'zgaruvchilarimni aytib turadi.
 
-const interface = 22; // Bizga interface nomi orqali uzgaruvchi yaratib berdi. Lekin bunday nom orqali uzgaruvchi mumkin emas. Chunki javascriptning reserve suzi hisoblanadi. Shuning oldini olish uchun strict mode bizga bunday nomdan foydalanish mumkin emasliginin aytib turadi.
+ekrangaChiqar();
+ekrangaChiqar();
+ekrangaChiqar();
+
+function yoshniHisobla(tugilganYil, hozirgiYil) {
+  console.log("Tugilgan yilni hisoblash:");
+  return hozirgiYil - tugilganYil;
+}
+
+console.log(yoshniHisobla(1996, 2022));
+console.log(yoshniHisobla(2000, 2022));
+console.log(yoshniHisobla(2002, 2022));
